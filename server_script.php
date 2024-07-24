@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Email configuration
     $to = "riajul.islam.dev@gmail.com";
-    $subject = "New Contact Form Submission: $subject";
+    $subject = "Form submitted from riajul-islam.com.bd: $subject";
     $headers = "From: $email";
 
     // Compose and send email
