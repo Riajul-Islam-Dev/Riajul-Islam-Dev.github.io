@@ -112,7 +112,7 @@
 
     <section class="container">
         <div class="row justify-content-center">
-            <div class="col-md-6" id="animation-code-green"></div>
+            <div class="col-md-6 pt-3" id="animation-code-green"></div>
         </div>
     </section>
 
@@ -231,10 +231,7 @@
                         <span class="date">Sep 2020 – Oct 2021</span>
                         <h2>Associate Web Developer</h2>
                         <span class="position">Perky Rabbit</span>
-                        <p class="mt-4">My professional journey as a photographer has cultivated expertise in capturing
-                            captivating moments, mastering the art of composition, and leveraging advanced photographic
-                            techniques. This experience empowers me to artistically translate visions into compelling
-                            visual narratives, creating a strong foothold in the world of photography.</p>
+                        <p class="mt-4">My web development journey has honed my skills in learning new languages and advanced coding techniques. This expertise enables me to transform innovative ideas into impactful solutions, establishing a solid presence in the ever-evolving world of web development.</p>
                     </div>
                 </div>
                 <div class="col-md-6">

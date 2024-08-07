@@ -11001,14 +11001,14 @@ h5,
 }
 .owl-carousel.home-slider {
   position: relative;
-  height: 750px;
+  height: 700px;
   z-index: 0;
 }
 .owl-carousel.home-slider .slider-item {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  height: 750px;
+  height: 700px;
   position: relative;
   z-index: 0;
 }
@@ -11027,7 +11027,7 @@ h5,
   opacity: 0;
 }
 .owl-carousel.home-slider .slider-item .slider-text {
-  height: 750px;
+  height: 700px;
   z-index: 0;
 }
 @media (max-width: 991.98px) {
