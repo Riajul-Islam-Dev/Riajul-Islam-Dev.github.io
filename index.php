@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,6 +31,15 @@
     <link href="assets/libs/toastr/toastr.min.css" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .toast {
+            background-color: #32BC38 !important;
+            /* Lime background */
+            color: white !important;
+            /* White text */
+        }
+    </style>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" style="position: relative; z-index: 0;">
@@ -42,7 +54,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Riajul Islam</a>
+            <a class="navbar-brand" href="index.php">Riajul Islam</a>
             <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="oi oi-menu"></span> Menu
             </button>
@@ -912,18 +924,26 @@
 
             <div class="row no-gutters block-9">
                 <div class="col-md-6 order-md-last d-flex">
-                    <form action="server_script.php" method="POST" class="border border-warning p-4 p-md-5 contact-form" style="background-color: #f1ffef;">
+                    <form id="contactForm" action="server_script.php" method="POST" class="border border-warning p-4 p-md-5 contact-form" style="background-color: #f1ffef;" onsubmit="return validateForm();">
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control" placeholder="Your Name">
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name">
+                            <span id="nameError" style="color: red; display: none;">Please enter your name.</span>
                         </div>
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control" placeholder="Your Email">
+                            <input type="email" name="email" id="email" class="form-control" placeholder="Your Email">
+                            <span id="emailError" style="color: red; display: none;">Please enter a valid email address.</span>
                         </div>
                         <div class="form-group">
-                            <input type="text" name="subject" class="form-control" placeholder="Subject">
+                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Your Phone Number">
+                            <span id="phoneError" style="color: red; display: none;">Please enter a valid phone number.</span>
                         </div>
                         <div class="form-group">
-                            <textarea name="message" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                            <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+                            <span id="subjectError" style="color: red; display: none;">Please enter a subject.</span>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                            <span id="messageError" style="color: red; display: none;">Please enter your message.</span>
                         </div>
                         <div class="form-group">
                             <button type="submit" class="btn btn-primary py-3 px-5">Send Message</button>
@@ -1083,6 +1103,92 @@
             loop: true,
             autoplay: true,
             path: 'landing-assets/img/animations/animation-code-green.json'
+        });
+    </script>
+
+    <script>
+        function validateForm() {
+            // Get form elements
+            var name = document.getElementById("name").value.trim();
+            var email = document.getElementById("email").value.trim();
+            var phone = document.getElementById("phone").value.trim();
+            var subject = document.getElementById("subject").value.trim();
+            var message = document.getElementById("message").value.trim();
+
+            var isValid = true;
+
+            // Name validation
+            if (name === "") {
+                document.getElementById("nameError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("nameError").style.display = "none";
+            }
+
+            // Email validation
+            var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+            if (email === "" || !emailPattern.test(email)) {
+                document.getElementById("emailError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("emailError").style.display = "none";
+            }
+
+            // Phone validation
+            var phonePattern = /^01[3-9]\d{8}$/; // Adjusted pattern for Bangladeshi phone numbers
+            if (phone === "" || !phonePattern.test(phone)) {
+                document.getElementById("phoneError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("phoneError").style.display = "none";
+            }
+
+            // Subject validation
+            if (subject === "") {
+                document.getElementById("subjectError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("subjectError").style.display = "none";
+            }
+
+            // Message validation
+            if (message === "") {
+                document.getElementById("messageError").style.display = "block";
+                isValid = false;
+            } else {
+                document.getElementById("messageError").style.display = "none";
+            }
+
+            return isValid;
+        }
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-right", // You can change this to your desired position
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000", // Set duration for how long the toast should be visible
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            };
+
+            <?php
+            if (isset($_SESSION['toastr'])) {
+                echo "toastr.success('" . addslashes($_SESSION['toastr']) . "');";
+                unset($_SESSION['toastr']);
+            }
+            ?>
         });
     </script>
 
