@@ -135,14 +135,12 @@
                                 dynamic realm of software development, where I consistently craft inventive and
                                 real-world web solutions.</p>
                             <ul class="about-info mt-4 px-md-0 px-2">
-                                <li class="d-flex"><span>Name:</span> <span style="color: #32bc38;">Riajul Islam</span>
+                                <li class="d-flex"><span>Name: </span><span style="color: #32bc38;">Riajul Islam</span>
                                 </li>
-                                <!-- <li class="d-flex"><span>Date of birth:</span> <span>August 26, 1996</span></li> -->
-                                <li class="d-flex"><span>Address:</span><a href="https://www.google.com/maps?q=4+Tala+Office,South+Banasree,Dhaka,Bangladesh" target="_blank" rel="noopener noreferrer" aria-label="Google Maps Location">
-                                        Banasree, Rampura, Dhaka, Bangladesh
+                                <li class="d-flex"><span>Address: </span><a href="https://www.google.com/maps?q=4+Tala+Office,South+Banasree,Dhaka,Bangladesh" target="_blank" rel="noopener noreferrer" aria-label="Google Maps Location">
+                                        Banasree, Dhaka, Bangladesh
                                     </a></li>
-                                <!-- <li class="d-flex"><span>Zip code:</span> <span>1219</span></li> -->
-                                <li class="d-flex"><span>Email:</span> <a href="mailto:riajul.islam.dev@gmail.com">riajul.islam.dev@gmail.com</a></li>
+                                <li class="d-flex"><span>Email: </span><a href="mailto:riajul.islam.dev@gmail.com">riajul.islam.dev@gmail.com</a></li>
                                 <li class="d-flex"><span>Phone: </span><a href="https://wa.me/+8801722787007" target="_blank" rel="noopener noreferrer">
                                         +880 17*****007</a></li>
                             </ul>
