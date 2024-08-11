@@ -39,6 +39,78 @@ session_start();
             color: white !important;
             /* White text */
         }
+
+        #progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: #f3f3f3;
+            z-index: 1000;
+        }
+
+        #progress-bar {
+            height: 100%;
+            width: 0;
+            background: #32bc38;
+        }
+
+        .scrollToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            display: none;
+            /* Hidden by default */
+            width: 62px;
+            height: 62px;
+            background-color: #4caf50;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 1000;
+            overflow: hidden;
+            border: 4px solid #32bc38;
+            /* Add white border */
+        }
+
+        .scrollToTop span {
+            font-size: 26px;
+            z-index: 1;
+            /* Ensure icon is above the circular progress */
+        }
+
+        .circular-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: conic-gradient(#4caf50 0%, rgba(255, 255, 255, 1) 0%);
+            transition: background 0.3s;
+            z-index: 0;
+            /* Ensure it is behind the icon */
+        }
+
+        .circular-progress::before {
+            content: '';
+            position: absolute;
+            top: 5px;
+            /* Inner circle padding */
+            left: 5px;
+            /* Inner circle padding */
+            right: 5px;
+            /* Inner circle padding */
+            bottom: 5px;
+            /* Inner circle padding */
+            background: #4caf50;
+            /* Inner circle color */
+            border-radius: 50%;
+        }
     </style>
 </head>
 
@@ -50,6 +122,10 @@ session_start();
             <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
             <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#32bc38" />
         </svg>
+    </div>
+
+    <div id="progress-container">
+        <div id="progress-bar"></div>
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
@@ -729,7 +805,6 @@ session_start();
         </div>
     </section>
 
-
     <section class="ftco-section" id="blog-section">
         <div class="container">
             <div class="row justify-content-center mb-5 pb-5">
@@ -1076,6 +1151,11 @@ session_start();
         </div>
     </footer>
 
+    <div class="scrollToTop" id="scrollToTopBtn" title="Go to top">
+        <span>↑</span>
+        <div class="circular-progress" id="circularProgress"></div>
+    </div>
+
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-migrate-3.0.1.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -1207,6 +1287,44 @@ session_start();
         })();
     </script>
     <!--End of Tawk.to Script-->
+
+    <script>
+        // Get the button and progress elements
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        const progressBar = document.getElementById("progress-bar");
+        const circularProgress = document.getElementById("circularProgress");
+
+        // Initially hide the button
+        scrollToTopBtn.style.display = "none";
+
+        // Show button when scrolling down
+        window.onscroll = function() {
+            const scrollTop = document.documentElement.scrollTop;
+            const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+
+            // Update progress bar
+            const scrollPercentage = (scrollTop / scrollHeight) * 100;
+            progressBar.style.width = scrollPercentage + "%";
+
+            // Update circular progress
+            circularProgress.style.background = `conic-gradient(#4caf50 ${scrollPercentage}%, rgba(255, 255, 255, 0.3) ${scrollPercentage}%)`;
+
+            // Show button if scrolled down
+            if (scrollTop > 300) {
+                scrollToTopBtn.style.display = "flex"; // Show the button when scrolled down
+            } else {
+                scrollToTopBtn.style.display = "none"; // Hide the button when near the top
+            }
+        };
+
+        // Scroll to top function
+        scrollToTopBtn.onclick = function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        };
+    </script>
 
 </body>
 
