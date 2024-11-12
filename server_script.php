@@ -46,9 +46,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Email configuration
     $to = "ritewu2014@gmail.com";
-    $from = "noreply@softkit.xyz";
-    $smtp_host = "mail.softkit.xyz";
-    $smtp_username = "noreply@softkit.xyz";
+    $from = "noreply@softkit.io";
+    $smtp_host = "mail.softkit.io";
+    $smtp_username = "noreply@softkit.io";
     $smtp_password = $_ENV['SMTP_PASSWORD']; // Get SMTP password from environment variables
 
     // Create an instance of PHPMailer

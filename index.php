@@ -735,7 +735,7 @@ session_start();
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/portfolio/portfolio-6.jpg);">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
-                            <h3><a href="https://ems.softkit.xyz/">Expense Management - SoftkIT</a></h3>
+                            <h3><a href="https://ems.softkit.io/">Expense Management - SoftkIT</a></h3>
                             <span>Web Development</span>
                         </div>
                     </div>
@@ -745,7 +745,7 @@ session_start();
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/portfolio/portfolio-7.jpg);">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
-                            <h3><a href="https://ec.softkit.xyz/">eCommerce - SoftkIT</a></h3>
+                            <h3><a href="https://ec.softkit.io/">eCommerce - SoftkIT</a></h3>
                             <span>Web Development</span>
                         </div>
                     </div>
@@ -755,7 +755,7 @@ session_start();
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/portfolio/portfolio-8.jpg);">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
-                            <h3><a href="https://ec.softkit.xyz/">eCommerce - SoftkIT</a></h3>
+                            <h3><a href="https://ec.softkit.io/">eCommerce - SoftkIT</a></h3>
                             <span>Web Development</span>
                         </div>
                     </div>
@@ -765,7 +765,7 @@ session_start();
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/portfolio/portfolio-9.jpg);">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
-                            <h3><a href="https://ec.softkit.xyz/">eCommerce - SoftkIT</a></h3>
+                            <h3><a href="https://ec.softkit.io/">eCommerce - SoftkIT</a></h3>
                             <span>Web Development</span>
                         </div>
                     </div>
@@ -775,7 +775,7 @@ session_start();
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/portfolio/portfolio-10.jpg);">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
-                            <h3><a href="https://ec.softkit.xyz/">eCommerce - SoftkIT</a></h3>
+                            <h3><a href="https://ec.softkit.io/">eCommerce - SoftkIT</a></h3>
                             <span>Web Development</span>
                         </div>
                     </div>
@@ -785,7 +785,7 @@ session_start();
                     <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(images/portfolio/portfolio-11.jpg);">
                         <div class="overlay"></div>
                         <div class="text text-center p-4">
-                            <h3><a href="https://ec.softkit.xyz/">eCommerce - SoftkIT</a></h3>
+                            <h3><a href="https://ec.softkit.io/">eCommerce - SoftkIT</a></h3>
                             <span>Web Development</span>
                         </div>
                     </div>
@@ -987,12 +987,12 @@ session_start();
                 <div class="col-md-6 col-lg-3 d-flex ftco-animate">
                     <div class="align-self-stretch box p-4 text-center">
                         <div class="icon d-flex align-items-center justify-content-center">
-                            <a href="https://softkit.xyz" target="_blank" rel="noopener noreferrer" aria-label="Visit Softkit Website">
+                            <a href="https://softkit.io" target="_blank" rel="noopener noreferrer" aria-label="Visit Softkit Website">
                                 <span class="icon-globe" aria-hidden="true"></span>
                             </a>
                         </div>
                         <h3 class="mb-4">Website</h3>
-                        <p><a href="https://softkit.xyz" target="_blank" rel="noopener noreferrer" aria-label="Visit Softkit Website" style="color: #32bc38;">softkit.xyz</a></p>
+                        <p><a href="https://softkit.io" target="_blank" rel="noopener noreferrer" aria-label="Visit Softkit Website" style="color: #32bc38;">softkit.io</a></p>
                     </div>
                 </div>
             </div>
