@@ -1,6 +1,7 @@
 <?php
 session_start();
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -145,6 +146,7 @@ session_start();
                     <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
                     <li class="nav-item"><a href="#blog-section" class="nav-link"><span>My Blog</span></a></li>
                     <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+                    <li class="nav-item"><a href="https://softkit.io" class="nav-link"><span>SoftkIT <img src="images/softkit-logo.png" alt="Icon" style="width: 30px; height: 30px;"></span></a></li>
                 </ul>
             </div>
         </div>
@@ -164,9 +166,10 @@ session_start();
                                 <span class="subheading">Hello!</span>
                                 <h1 class="mb-4 mt-3">I'm <span>Riajul Islam</span></h1>
                                 <h2 class="mb-4">A Full Stack Web Developer</h2>
-                                <p><a href="https://wa.me/+8801722787007" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-4">Hire me</a>
-                                    <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My
-                                        works</a>
+                                <p>
+                                    <a href="https://wa.me/+8801722787007" target="_blank" rel="noopener noreferrer" class="btn btn-secondary py-3 px-4">Hire me</a>
+                                    <a href="#projects-section" class="btn btn-outline-success py-3 px-4">My works</a>
+                                    <a href="Riajul_Islam_Software_Engineer_Resume.php" class="btn btn-secondary py-3 px-3">View Resume</a>
                                 </p>
                             </div>
                         </div>
@@ -186,9 +189,10 @@ session_start();
                                 <span class="subheading">What are you waiting for!</span>
                                 <h1 class="mb-4 mt-3"><span>Together,</span></h1>
                                 <h2>we'll turn dreams into reality and build something <span style="color: #32bc38;">amazing</span></h2>
-                                <p><a href="https://wa.me/+8801722787007" target="_blank" rel="noopener noreferrer" class="btn btn-primary py-3 px-4">Hire me</a>
-                                    <a href="#projects-section" class="btn btn-white btn-outline-white py-3 px-4">My
-                                        works</a>
+                                <p>
+                                    <a href="https://wa.me/+8801722787007" target="_blank" rel="noopener noreferrer" class="btn btn-secondary py-3 px-4">Hire me</a>
+                                    <a href="#projects-section" class="btn btn-outline-success py-3 px-4">My works</a>
+                                    <a href="Riajul_Islam_Software_Engineer_Resume.php" class="btn btn-secondary py-3 px-3">View Resume</a>
                                 </p>
                             </div>
                         </div>
@@ -240,7 +244,10 @@ session_start();
                                 <span class="number" data-number="21">0</span>
                                 <span>Projects complete</span>
                             </p>
-                            <p><a href="Riajul_Islam_Software_Engineer_Resume.pdf" class="btn btn-primary py-3 px-3" download>Download Resume</a></p>
+                            <p>
+                                <a href="Riajul_Islam_Software_Engineer_Resume.pdf" class="btn btn-primary py-3 px-3" download>Download Resume</a>
+                                <a href="Riajul_Islam_Software_Engineer_Resume.php" class="btn btn-secondary py-3 px-3">View Resume</a>
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -335,7 +342,10 @@ session_start();
 
             <div class="row justify-content-center mt-5">
                 <div class="col-md-6 text-center ftco-animate">
-                    <p><a href="Riajul_Islam_Software_Engineer_Resume.pdf" class="btn btn-primary py-3 px-3" download>Download Resume</a></p>
+                    <p>
+                        <a href="Riajul_Islam_Software_Engineer_Resume.pdf" class="btn btn-primary py-3 px-3" download>Download Resume</a>
+                        <a href="Riajul_Islam_Software_Engineer_Resume.php" class="btn btn-secondary py-3 px-3">View Resume</a>
+                    </p>
                 </div>
             </div>
         </div>
