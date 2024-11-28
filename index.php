@@ -168,7 +168,7 @@ session_start();
                                 <h2 class="mb-4">A Full Stack Web Developer</h2>
                                 <p>
                                     <a href="https://wa.me/+8801722787007" target="_blank" rel="noopener noreferrer" class="btn btn-secondary py-3 px-4">Hire me</a>
-                                    <a href="#projects-section" class="btn btn-outline-success py-3 px-4">My works</a>
+                                    <a href="#projects-section" class="btn btn-outline-success py-3 px-3">My works</a>
                                     <a href="Riajul_Islam_Software_Engineer_Resume.php" class="btn btn-secondary py-3 px-3">View Resume</a>
                                 </p>
                             </div>
@@ -191,7 +191,7 @@ session_start();
                                 <h2>we'll turn dreams into reality and build something <span style="color: #32bc38;">amazing</span></h2>
                                 <p>
                                     <a href="https://wa.me/+8801722787007" target="_blank" rel="noopener noreferrer" class="btn btn-secondary py-3 px-4">Hire me</a>
-                                    <a href="#projects-section" class="btn btn-outline-success py-3 px-4">My works</a>
+                                    <a href="#projects-section" class="btn btn-outline-success py-3 px-3">My works</a>
                                     <a href="Riajul_Islam_Software_Engineer_Resume.php" class="btn btn-secondary py-3 px-3">View Resume</a>
                                 </p>
                             </div>
@@ -245,7 +245,7 @@ session_start();
                                 <span>Projects complete</span>
                             </p>
                             <p>
-                                <a href="Riajul_Islam_Software_Engineer_Resume.pdf" class="btn btn-primary py-3 px-3" download>Download Resume</a>
+                                <a href="Riajul_Islam_Software_Engineer_Resume.pdf" class="btn btn-outline-success py-3 px-3" download>Download Resume</a>
                                 <a href="Riajul_Islam_Software_Engineer_Resume.php" class="btn btn-secondary py-3 px-3">View Resume</a>
                             </p>
                         </div>
@@ -343,7 +343,7 @@ session_start();
             <div class="row justify-content-center mt-5">
                 <div class="col-md-6 text-center ftco-animate">
                     <p>
-                        <a href="Riajul_Islam_Software_Engineer_Resume.pdf" class="btn btn-primary py-3 px-3" download>Download Resume</a>
+                        <a href="Riajul_Islam_Software_Engineer_Resume.pdf" class="btn btn-outline-success py-3 px-3" download>Download Resume</a>
                         <a href="Riajul_Islam_Software_Engineer_Resume.php" class="btn btn-secondary py-3 px-3">View Resume</a>
                     </p>
                 </div>

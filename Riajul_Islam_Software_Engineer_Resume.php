@@ -195,7 +195,7 @@ session_start();
                                 <span>Projects complete</span>
                             </p>
                             <p>
-                                <a href="Riajul_Islam_Software_Engineer_Resume.pdf" class="btn btn-primary py-3 px-3" download>Download Resume</a>
+                                <a href="Riajul_Islam_Software_Engineer_Resume.pdf" class="btn btn-outline-success py-3 px-3" download>Download Resume</a>
                             </p>
                         </div>
                     </div>
@@ -210,17 +210,28 @@ session_start();
                 <div class="col-md-12 heading-section text-center ftco-animate">
                     <h1 class="big big-2">Riajul Islam - Resume</h1>
                     <h2 class="mb-4">Riajul Islam - Resume</h2>
+                    <p>Here is my resume. You can also download it using the button below.</p>
                 </div>
             </div>
-
-            <div class="row">
-                <iframe src="Riajul_Islam_Software_Engineer_Resume.pdf" class="pdf-viewer"></iframe>
+            <div class="row justify-content-center">
+                <!-- First Resume Image -->
+                <div class="col-md-10 mb-4">
+                    <img src="images/Riajul_Islam_Software_Engineer_Resume-1.png"
+                        alt="Riajul Islam Resume Page 1"
+                        class="img-fluid">
+                </div>
+                <!-- Second Resume Image -->
+                <div class="col-md-10">
+                    <img src="images/Riajul_Islam_Software_Engineer_Resume-2.png"
+                        alt="Riajul Islam Resume Page 2"
+                        class="img-fluid">
+                </div>
             </div>
 
             <div class="row justify-content-center mt-5">
                 <div class="col-md-6 text-center ftco-animate">
                     <p>
-                        <a href="Riajul_Islam_Software_Engineer_Resume.pdf" class="btn btn-primary py-3 px-3" download>Download Resume</a>
+                        <a href="Riajul_Islam_Software_Engineer_Resume.pdf" class="btn btn-outline-success py-3 px-3" download>Download Resume</a>
                     </p>
                 </div>
             </div>
@@ -317,7 +328,7 @@ session_start();
                             <span id="messageError" style="color: red; display: none;">Please enter your message.</span>
                         </div>
                         <div class="form-group">
-                            <button type="submit" class="btn btn-primary py-3 px-5">Send Message</button>
+                            <button type="submit" class="btn btn-outline-success py-3 px-3">Send Message</button>
                         </div>
                     </form>
 
